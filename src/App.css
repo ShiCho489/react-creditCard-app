@@ -1,0 +1,28 @@
+div.container{
+  padding: 10px;
+ 
+  
+  
+}
+
+div.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  max-width: 15%;
+  max-height: 20%;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  padding: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+  dispaly: flex;
+  flex-direction: row;
+  background-color: lightblue;
+
+
+}
+
+.month{
+  
+}
+
