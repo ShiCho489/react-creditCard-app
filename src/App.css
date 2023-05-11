@@ -1,28 +1,41 @@
-div.container{
+.container {
+  width: 350px;
+  border-radius: 12px;
   padding: 10px;
- 
-  
+  margin-bottom: 1rem;
   
 }
 
-div.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  max-width: 15%;
-  max-height: 20%;
-  margin: auto;
+
+.Bank-img {
+  display: flex;
+  justify-content: flex-end;    
+}
+
+.Card-img {
+  width: 60px;
+}
+
+.Card-number {
   text-align: center;
-  font-family: arial;
-  padding: 10px;
-  border-radius: 20px;
-  overflow: hidden;
-  dispaly: flex;
-  flex-direction: row;
-  background-color: lightblue;
-
-
+  font-size: 30px;
 }
 
-.month{
+.Info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  height: 100px;
+  width: 225px;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+
+.Owner {
+  margin-top: 0;
   
 }
+
 

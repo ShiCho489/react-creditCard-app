@@ -1,14 +1,12 @@
 import CreditCard from './components/CreditCard';
-import Image from './Image';
-
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <CreditCard
+  <CreditCard
   type="visa"
-  number="..........8845"
+  number="0123456789018845"
   expirationMonth={3}
   expirationYear={2021}
   bank="BNP"
@@ -19,7 +17,7 @@ function App() {
     
 <CreditCard
   type="master-card"
-  number="........0995"
+  number="0123456789010995"
   expirationMonth={3}
   expirationYear={2021}
   bank="N26"
@@ -30,7 +28,7 @@ function App() {
     
 <CreditCard
   type="visa"
-  number="..........6984"
+  number="0123456789016984"
   expirationMonth={12}
   expirationYear={2019}
   bank="Name of the Bank"
@@ -39,8 +37,7 @@ function App() {
   color="white" 
 />
      
-      
-    </div>
+ </div>
   );
 }
 

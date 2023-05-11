@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import visaImg from '../assets/visa.png';
+import masterImg from '../assets/mastercard.png';
 
 export const CreditCard = ({type,
   number,
@@ -17,27 +19,35 @@ export const CreditCard = ({type,
       return masterImg
     }
   }
+
+  const cardNumber = '•••• •••• •••• ' + number.slice(12); 
+
+  const expirationDate = expirationMonth + '/' + expirationYear.toString().slice(2);
+
+  const creditCardStyle = {
+    color: color, 
+    backgroundColor: bgColor,
+  };
+
   return (
-    <div className = "container">
-      <div className = "card"  >
-        <div className= "top-card">
-        <img className="img" src={props.image} alt="card type" />
+    <div style= {creditCardStyle} className = "container">
+      
+        <span className="Bank-img">
+        <img className='Card-img' src={bankImg()} alt="CreditCard bank"></img>
+      </span>
+       <p className="Card-number">{cardNumber}</p>
+       <div className="Info-container">
+        <p>Expires {expirationDate} </p>
+        <p>{bank}</p>
+        <p className="Owner">{owner}</p>
         </div>
-        <div classname="info">
-        <span>{props.number}</span>
-        <p className="month">{props.expirationMonth}</p>
-        <p className= "year">Expires in {props.expirationYear}</p>
-        <p className="bank">{props.bank}</p>
-        <p classname="owner">{props.owner}</p>
-       
+      
+        
         </div>
         
-       
+      
 
-
-      </div>
-
-    </div>
+    
   )
 }
 
